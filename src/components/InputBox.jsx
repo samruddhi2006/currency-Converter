@@ -20,7 +20,7 @@ function InputBox({
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
       <div className='w-1/2'>
 
-      // label can be more optimized by using useId hook used for generating unique IDs that can be passed to accessibility attributes
+      {/*  label can be more optimized by using useId hook used for generating unique IDs that can be passed to accessibility attributes */}
       <label htmlFor={amountInputId}
       className="text-black/40 mb-2 inline-block">
         {label}
