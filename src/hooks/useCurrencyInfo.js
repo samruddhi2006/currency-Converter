@@ -13,10 +13,11 @@ function useCurrencyInfo(currency){
     const [data, setData] = useState({})
 
     useEffect(() => {
-        fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2025.1.8/v1/currencies/${currency}.json`)
+        fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2025.1.8/v1/currencies/${currency}.json
+`)
         //converting string data into json format
         .then((res) => res.json())
-        .then(() => setData(res[currency]))
+        .then((res) => setData(res[currency]))
     }, //whenever there is change in currency i.e from usd to inr we have to call useEffect so currency is dependency
     [currency])
     //console.table(data)
